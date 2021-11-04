@@ -27,6 +27,9 @@ class App {
   }
 
   removeNote(id) {
+    const result = window.confirm('Do you really want to delete?');
+    if (!result) return;
+
     this.notes = this.notes.filter((n) => n.id !== id);
     const node = this.$notes.querySelector(`[data-id="${id}"]`);
     node.remove();
