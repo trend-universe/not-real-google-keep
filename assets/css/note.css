@@ -1,0 +1,82 @@
+.note {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  padding: 8px;
+  margin: 8px;
+}
+
+.note .title {
+  margin-bottom: 8px;
+}
+
+.note input,
+.note textarea {
+  width: 100%;
+  border: none;
+  background-color: transparent;
+  font-size: 16px;
+}
+
+.note textarea {
+  resize: none;
+  height: 200px;
+}
+
+.note input:focus,
+.note textarea:focus {
+  outline: none;
+}
+
+.toolbar {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+  padding: 0 8px;
+}
+
+.toolbar .btn-palette {
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  margin: 0 2px;
+  border: 1px solid #ccc;
+}
+
+.btn-delete {
+  width: 36px;
+  height: 36px;
+  margin-left: auto;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+}
+
+.btn-delete:hover {
+  background-color: rgba(0, 0, 0, 10%);
+}
+
+.btn-delete svg {
+  fill: #ea8576;
+  stroke: #ea8576;
+}
+
+.yellow {
+  background-color: #fff475;
+}
+
+.purple {
+  background-color: #d7aefb;
+}
+
+.blue {
+  background-color: #aecbfa;
+}
+
+.pink {
+  background-color: #fdcfe8;
+}
+
+.green {
+  background-color: #ccff90;
+}
