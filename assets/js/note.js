@@ -1,3 +1,4 @@
+import deleteSvg from '../img/delete.svg';
 import '../css/note.css';
 import { COLOR } from './model';
 
@@ -42,7 +43,10 @@ export class Note {
     // delete button
     const button = document.createElement('button');
     button.classList.add('btn-delete');
-    button.innerHTML = '<img src="/assets/img/delete.svg" alt="" />';
+    const img = document.createElement('img');
+    img.src = deleteSvg;
+    img.alt = '';
+    button.appendChild(img);
     button.onclick = () => {
       this.onDelete(this.id);
     };
