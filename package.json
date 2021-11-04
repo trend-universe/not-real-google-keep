@@ -2,6 +2,7 @@
   "name": "note",
   "version": "0.0.0",
   "license": "MIT",
+  "homepage": "https://trend-universe.github.io/not-real-google-keep",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
